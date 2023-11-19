@@ -1,0 +1,416 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 25px;
+  font-size: 15px;
+}
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url(ImagesUts/bgqt.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.layar-dalam {
+  width: 1000px;
+  margin: auto;
+}
+.layar-penuh {
+  width: 100%;
+}
+nav {
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  border-bottom: 1px solid #b1b1b1;
+  line-height: 60px;
+  width: 100%;
+  transition: background-color 0.5s ease;
+}
+nav.putih {
+  background-color: #fff;
+}
+nav .logo {
+  float: left;
+  position: relative;
+  line-height: 55px;
+  text-align: center;
+}
+nav .logo img {
+  vertical-align: middle;
+  width: 120px;
+}
+
+nav .menu {
+  float: right;
+  height: 60px;
+  max-width: 600px;
+}
+
+nav .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav .menu ul li {
+  list-style-type: none;
+  float: left;
+  line-height: 60px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav ul li ul.dropdown {
+  background: #d47590;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+nav ul li:hover ul.dropdown {
+  display: block;
+}
+
+/* pengaturan header */
+header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -2;
+  width: 100%;
+}
+header .intro {
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 50%;
+}
+header .intro h3 {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+.tombol {
+  background-color: #c86b85;
+  height: 40px;
+  line-height: 42px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 20px 0px 20px;
+  font-size: 15px;
+  border-radius: 4px;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 50%;
+  z-index: -1;
+}
+.tombol-menu {
+  position: absolute;
+  top: 1.7rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+.tombol-menu .garis {
+  height: 3px;
+  background-color: #fff;
+}
+section h3 {
+  font-size: 20px;
+}
+section h3::after {
+  content: "";
+  border-bottom: 4px solid black;
+  width: 50px;
+  display: block;
+  margin: 20px auto;
+}
+#about,
+#wisata {
+  text-align: center;
+}
+#about h3, h1, h2 {
+  text-align: center;
+}
+#about p {
+text-align: justify;
+}
+
+.misi {
+  text-align: left;
+}
+
+section .konten-isi p {
+  font-style: normal;
+  text-align: justify;
+}
+nav.putih {
+  background-color: #fff;
+}
+nav.putih .tombol-menu .garis {
+  background-color: #333;
+}
+nav.putih ul li a {
+  color: #333;
+}
+nav .logo img.hitam {
+  display: none;
+}
+
+.bg-card {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.card {
+  width: 300px;
+  height: 450px;
+  margin: auto;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 8px blueviolet;
+  transition: 300px;
+}
+
+.gambar-card {
+  width: 300px;
+  height: 210px;
+  overflow: hidden;
+}
+
+.gambar-card img {
+  width: 100%;
+  height: 100%;
+  transition: 2s;
+}
+
+.des-card {
+  padding: 5px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+.des-card h2 {
+  color: black;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.des-card p {
+  color: #333;
+  line-height: 20px;
+}
+
+.bg-card a {
+  text-decoration: none;
+}
+
+.card:hover img{
+  transform: scale(1.5);
+  transition: 2s;
+}
+
+section#gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: hidden;
+  padding: 10px 0px 10px 0px;
+}
+section#gallery div {
+  padding: 10px;
+}
+section#gallery div img {
+  height: 100px;
+  border-radius:5px;
+}
+section#gallery div img:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+section.quote {
+  background: url(ImagesUts/bgqts.jpg) no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: rgb(245, 158, 72);
+  font-size: 20px;
+  font-style: italic;
+  padding: 100px;
+}
+section.quote .layar-dalam p {
+  display: inline;
+  background: url() no-repeat;
+  padding: 40px;
+}
+
+footer {
+  background-color: #000;
+}
+
+.FooterContainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.SocialIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.SocialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 25px;
+  border-radius: 50%;
+}
+
+.SocialIcons a i {
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+
+/* Hover Effect on Social Media Icons */
+.SocialIcons a:hover {
+  background-color: black;
+  transition: 0.5s;
+}
+
+.SocialIcons a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+
+.FooterNav {
+  margin: 30px 0;
+}
+
+.FooterNav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: nonedisc;
+}
+
+.FooterNav ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.FooterNav ul li a:hover {
+  opacity: 1;
+}
+
+.FooterBottom {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+
+.FooterBottom p {
+  color: white;
+}
+
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+@media (max-width: 700px) {
+  .FooterNav ul{
+      flex-direction: column;
+  }
+  .FooterNav  ul li{
+      width: 100%;
+      text-align: center;
+      margin: 10px;
+  }
+}
+
+
+@media screen and (max-width: 991.98px) {
+  .layar-dalam {
+    width: 90%;
+  }
+  nav .menu ul {
+    display: none;
+    margin-top: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  nav .menu ul li {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    line-height: 40px;
+  }
+  nav .menu ul li a {
+    color: #333;
+  }
+  nav ul li ul.dropdown li {
+    display: none;
+  }
+  .tombol-menu {
+    display: flex;
+  }
+
+  .wisata {
+    display: block;
+  }
+  .wisata div {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+}
